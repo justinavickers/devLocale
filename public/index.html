@@ -3,14 +3,28 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Browserify Boilerplate</title>
+    <title>devLocale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+
+
 </head>
 <body>
-    <article class="output">
+
+    <article class="login">
+
+            <div id="loginBox" class="loginBox">
+              <input type="text" id="login" placeholder="Email" required>
+              <input type="password" id="password" placeholder="Password" required>
+              <input type="button" id="loginButton" class="loginButton" value="Login">
+              <input type="button" id="signUpButton" class="signUpButton" value="Register">
+            </div>
+
+      <div class="domEntry" ></div>
 
     </article>
 
     <script src="bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
