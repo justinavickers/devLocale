@@ -1,7 +1,17 @@
-.login {
+.hide {
+  visibility: hidden;
+}
+
+
+h1 {
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+}
+
+#loginSignUp {
 display: flex;
 flex-direction: row;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 justify-content: flex-start;
 align-items: flex-start;
 align-content: stretch;
@@ -10,26 +20,65 @@ padding:30px;
 border-radius: 25px;
 }
 
+#loginBox {
+  border-radius: 10px;
+  padding: 12px;
+}
+
 #login {
   border-radius: 10px;
   padding: 8px;
 }
 
-#password {
+#passwordLogin {
   border-radius: 10px;
   padding: 8px;
 }
 
-.loginButton {
+#passwordRegister {
+  border-radius: 10px;
+  padding: 8px;
+}
 
+#firstName {
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#lastName {
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#email {
+  border-radius: 10px;
+  padding: 8px;
+}
+
+
+
+
+
+.loginButton {
+border-radius: 6px;
 }
 
 .signUpButton {
-
+border-radius: 6px;
 }
 
+.logout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* align-content: stretch; */
+}
+
+#logOutButton {
+  border-radius: 6px;
+}
 body {
- /* /* background: #86c5cc; */
-/* background: #458991; */
 background: #65acb5;
 }

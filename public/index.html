@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>devLocale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
 </head>
+
 <body>
+    <h1>Welcome to devLocale!</h1>
+    <section id="loginSignUp">
 
-    <article class="login">
-
-            <div id="loginBox" class="loginBox">
-              <input type="text" id="login" placeholder="Email" required>
-              <input type="password" id="password" placeholder="Password" required>
-              <input type="button" id="loginButton" class="loginButton" value="Login">
-              <input type="button" id="signUpButton" class="signUpButton" value="Register">
+        <article class="register">
+            <div id="registerBox" class="registerBox">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <input type="password" id="passwordRegister" placeholder="Password" required>
+                <input type="button" id="signUpButton" class="signUpButton" value="Register">
             </div>
+        </article>
 
-      <div class="domEntry" ></div>
-
+        <article class="login">
+            <div id="loginBox" class="loginBox">
+                <input type="text" id="login" placeholder="Email" required>
+                <input type="password" id="passwordLogin" placeholder="Password" required>
+                <input type="button" id="loginButton" class="loginButton" value="Login">
+            </div>
+        </article>
+    </section>
+    <article class="logOut">
+        <div id="logOutBox" class="logOutBox">
+            <input type="button" id="logOutButton" class="logOutButton" value="Logout">
     </article>
+    </div>
+
+    <div class="domEntry"></div>
+
 
     <script src="bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
+
 </html>
