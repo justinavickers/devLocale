@@ -15,6 +15,8 @@ const hideDiv = {
     document.querySelector(".domEntry").innerHTML= ""
     const login = document.getElementById("loginBox")
     login.classList.toggle("hide")
+    const register = document.getElementById("registerBox")
+    register.classList.toggle("hide")
 
   }
 }

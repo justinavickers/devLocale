@@ -11,7 +11,7 @@ function loginUser() {
         sessionStorage.setItem("userId", user.id)
         sessionStorage.setItem("email", email.value)
         hideDiv.hideLoginDiv()
-        // hideDiv.hideRegisterDiv()
+        hideDiv.hideRegisterDiv()
         alert("welcome")
       } else {
         alert("wrong password")

@@ -6,6 +6,13 @@
       "firstName": "Justina",
       "lastName": "Vickers",
       "id": 2
+    },
+    {
+      "email": "soupforkidz@aol.com",
+      "password": "web",
+      "firstName": "Kevin",
+      "lastName": "Tarantula",
+      "id": 3
     }
   ]
 }
