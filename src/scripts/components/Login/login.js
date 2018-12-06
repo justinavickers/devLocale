@@ -12,12 +12,14 @@ function loginUser() {
         sessionStorage.setItem("email", email.value)
         hideDiv.hideLoginDiv()
         hideDiv.hideRegisterDiv()
-        alert("welcome")
+        alert("Welcome")
       } else {
         alert("wrong password")
       }
     })
 }
+
+
 
 function validatePassword(user) {
   const passwordValue = document.querySelector("#passwordLogin")

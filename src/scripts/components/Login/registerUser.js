@@ -1,5 +1,7 @@
 import userAPIfunctions from "./fetching"
 // import loginUser from "./login"
+import hideDiv from "./classChanger"
+
    function registerUser(){
      let obj={
        email: document.querySelector("#email").value,
@@ -11,7 +13,8 @@ import userAPIfunctions from "./fetching"
    console.log(obj)
    userAPIfunctions.postUser(obj)
    .then((response)=>response.json()
-  //  .then((user)=> loginUser(user))
    )
+   hideDiv.hideLoginDiv()
+   hideDiv.hideRegisterDiv()
 }
 export default registerUser

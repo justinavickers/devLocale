@@ -4,7 +4,7 @@ import loginUser from "./components/Login/login"
 
 
 let existingUserButton = document.getElementById("loginButton")
-let newUsers = document.querySelector("#signUpButton")
+let newUsers = document.getElementById("signUpButton")
 const logout = document.querySelector(".logOut")
 
 logout.addEventListener("click", () => {
