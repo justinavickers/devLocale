@@ -10,6 +10,12 @@ const hideDiv = {
     register.classList.toggle("hide")
   },
 
+  toggleLogoutDiv(){
+    console.log("togglelogoutrunning")
+    const logout = document.getElementById("logOutBox")
+    logout.classList.toggle("hide")
+  },
+
   LogOut() {
     sessionStorage.clear()
     document.querySelector(".domEntry").innerHTML= ""
@@ -17,7 +23,7 @@ const hideDiv = {
     login.classList.toggle("hide")
     const register = document.getElementById("registerBox")
     register.classList.toggle("hide")
-
+    this.toggleLogoutDiv()
   }
 }
 

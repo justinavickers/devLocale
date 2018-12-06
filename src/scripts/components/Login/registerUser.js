@@ -1,8 +1,8 @@
 import userAPIfunctions from "./fetching"
-// import loginUser from "./login"
 import hideDiv from "./classChanger"
 
    function registerUser(){
+     sessionStorage.clear()
      let obj={
        email: document.querySelector("#email").value,
        password: document.querySelector("#passwordRegister").value,

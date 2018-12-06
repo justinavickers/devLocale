@@ -5,13 +5,14 @@ function loginUser() {
   let email = document.querySelector("#login")
   userAPIfunctions.getUser(email.value)
     .then((user) => {
-      console.log(user)
+      // console.log(user)
       let validated = validatePassword(user)
       if (validated) {
         sessionStorage.setItem("userId", user.id)
         sessionStorage.setItem("email", email.value)
         hideDiv.hideLoginDiv()
         hideDiv.hideRegisterDiv()
+        hideDiv.toggleLogoutDiv()
         alert("Welcome")
       } else {
         alert("wrong password")

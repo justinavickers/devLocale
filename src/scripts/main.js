@@ -6,6 +6,13 @@ import loginUser from "./components/Login/login"
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 const logout = document.querySelector(".logOut")
+const session = sessionStorage.getItem("userId")
+
+if(session === null){
+  console.log("in the if")
+hideDiv.toggleLogoutDiv()
+}
+
 
 logout.addEventListener("click", () => {
   hideDiv.LogOut()
