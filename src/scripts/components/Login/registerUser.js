@@ -16,5 +16,7 @@ import hideDiv from "./classChanger"
    )
    hideDiv.hideLoginDiv()
    hideDiv.hideRegisterDiv()
+   hideDiv.toggleLogoutDiv()
+  //  hideDiv.toggleSearchBoxDiv()
 }
 export default registerUser

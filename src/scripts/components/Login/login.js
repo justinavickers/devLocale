@@ -13,6 +13,7 @@ function loginUser() {
         hideDiv.hideLoginDiv()
         hideDiv.hideRegisterDiv()
         hideDiv.toggleLogoutDiv()
+        // hideDiv.toggleSearchBoxDiv()
         alert("Welcome")
       } else {
         alert("wrong password")
