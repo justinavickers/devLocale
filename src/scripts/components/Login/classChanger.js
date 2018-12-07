@@ -31,5 +31,4 @@ const hideDiv = {
     this.toggleSearchBoxDiv()
   }
 }
-
 export default hideDiv

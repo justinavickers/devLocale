@@ -1,6 +1,6 @@
 function eventDisplay(event) {
   console.log(event)
-  let events= `
+  let events = `
   <div class = "eventName">
   <h3>${event.location}</h3>
   <h3>${event.typeOfEvent}</h3>
@@ -15,5 +15,4 @@ function eventDisplay(event) {
   `
   return events
 }
-
 export default eventDisplay

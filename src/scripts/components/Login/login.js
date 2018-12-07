@@ -13,15 +13,12 @@ function loginUser() {
         hideDiv.hideLoginDiv()
         hideDiv.hideRegisterDiv()
         hideDiv.toggleLogoutDiv()
-        // hideDiv.toggleSearchBoxDiv()
         alert("Welcome")
       } else {
         alert("wrong password")
       }
     })
 }
-
-
 
 function validatePassword(user) {
   const passwordValue = document.querySelector("#passwordLogin")
@@ -32,9 +29,4 @@ function validatePassword(user) {
   }
 }
 
-
 export default loginUser
-
-
-
-

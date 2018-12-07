@@ -4,7 +4,6 @@ import loginUser from "./components/Login/login"
 import eventsAPI from "./components/Events/fetching"
 import searchEventsDiv from "./components/Events/eventForm"
 
-
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 let searchButton = document.getElementById("searchButton")
@@ -16,7 +15,6 @@ console.log(eventsAPI.getAllEvents())
 if (session === null) {
   hideDiv.toggleLogoutDiv()
 }
-
 
 logout.addEventListener("click", () => {
   hideDiv.LogOut()
@@ -31,5 +29,5 @@ existingUserButton.addEventListener("click", () => {
 })
 
 searchButton.addEventListener("click", () => {
- searchEventsDiv()
+  searchEventsDiv()
 })

@@ -13,18 +13,18 @@ const eventListening = {
         console.log(document.querySelector("#url").value)
 
         postToAPI()
-        console.log("submit")}
+        console.log("submit")
+      }
     })
   },
   deleteButton() {
     document.addEventListener("click", function (obj) {
-      if (obj.target && obj.target.id=== "delete")
-      {
-      let eventIdNumber =obj.target.className
-      deleteEvent(eventIdNumber)}
+      if (obj.target && obj.target.id === "delete") {
+        let eventIdNumber = obj.target.className
+        deleteEvent(eventIdNumber)
+      }
 
     })
   }
 }
-
 export default eventListening
