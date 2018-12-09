@@ -14,5 +14,22 @@
       "lastName": "Tarantula",
       "id": 2
     }
-  ]
+  ],
+
+  "events": [
+    {
+      "location": "",
+      "typeOfEvent": "",
+      "date": "",
+      "time": "",
+      "attendance": "",
+      "company": "",
+      "url": "",
+      "id": 0
+  }
+]
+
+
+
+
 }

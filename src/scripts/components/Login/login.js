@@ -5,7 +5,7 @@ function loginUser() {
   let email = document.querySelector("#login")
   userAPIfunctions.getUser(email.value)
     .then((user) => {
-      // console.log(user)
+      console.log("user", user)
       let validated = validatePassword(user)
       if (validated) {
         sessionStorage.setItem("userId", user.id)
@@ -21,11 +21,14 @@ function loginUser() {
 }
 
 function validatePassword(user) {
+  console.log("validating")
   const passwordValue = document.querySelector("#passwordLogin")
   if (user.password === passwordValue.value) {
+    console.log("true")
     return true
   } else {
     return false
+    console.log("false")
   }
 }
 

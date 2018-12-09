@@ -2,22 +2,21 @@
   visibility: hidden;
 }
 
-
 h1 {
   font-family: 'Slabo 27px', serif;
   text-align: center;
 }
 
 #loginSignUp {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: flex-start;
-align-items: flex-start;
-align-content: stretch;
-background: #767a7a;
-padding:30px;
-border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  background: #767a7a;
+  padding: 30px;
+  border-radius: 25px;
 }
 
 #loginBox {
@@ -55,22 +54,18 @@ border-radius: 25px;
   padding: 8px;
 }
 
-
-
-
-
 .loginButton {
-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .signUpButton {
-border-radius: 6px;
+  border-radius: 6px;
 }
 
-.logout{
+.logout {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-end;
   /* align-content: stretch; */
@@ -79,6 +74,7 @@ border-radius: 6px;
 #logOutButton {
   border-radius: 6px;
 }
+
 body {
-background: #65acb5;
+  background: #65acb5;
 }
