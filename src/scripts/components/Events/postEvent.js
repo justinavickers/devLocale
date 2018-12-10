@@ -1,4 +1,4 @@
-import articleFetching from "./fetching"
+import eventsAPI from "./fetchEvent"
 import eventContentDOM from "./eventDisplay"
 function postToAPI() {
   let locationValue = document.querySelector("#location").value
@@ -18,8 +18,8 @@ function postToAPI() {
     company: companyValue,
     url: urlValue
   }
-  articleFetching.postFunction(object).then(() => {
-    articleContentDOM()
+  eventsAPI.postFunction(object).then(() => {
+    eventContentDOM()
   })
 }
 export default postToAPI

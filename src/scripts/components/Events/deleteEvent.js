@@ -1,8 +1,8 @@
-import eventFetching from "./fetching"
+import eventsAPI from "./fetchEvent"
 import eventContentDOM from "./eventDisplay"
 
 function deleteEvent(obj) {
-  eventFetching.deleteFunction(obj)
+  eventsAPI.deleteFunction(obj)
     .then(() => {
       eventContentDOM()
     })
