@@ -1,14 +1,14 @@
-let eventsAPI = {
-  getAllEvents() {
-    console.log("getAllEvents running")
-    fetch("https://www.eventbriteapi.com/v3/events/search/?q=technology&location.address=nashville,TN",
-      { headers: { "Authorization": "Bearer E57DISHET3ZVIBOTJUPY" } }
-    )
-      .then(returnedEvents => returnedEvents.json())
-      .then(events => {
-        console.log(events)
-      })
-    }
+// let eventsAPI = {
+//   getAllEvents() {
+//     console.log("getAllEvents running")
+//     fetch("https://www.eventbriteapi.com/v3/events/search/?q=technology&location.address=nashville,TN",
+//       { headers: { "Authorization": "Bearer E57DISHET3ZVIBOTJUPY" } }
+//     )
+//       .then(returnedEvents => returnedEvents.json())
+//       .then(events => {
+//         console.log(events)
+//       })
+//     }
   // },
 
   // postFunction(event) {
@@ -38,5 +38,5 @@ let eventsAPI = {
   //     method: "DELETE"
   //   }).then(res => res.json())
   // }
-}
-export default eventsAPI
+// }
+// export default eventsAPI
