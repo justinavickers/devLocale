@@ -12,8 +12,6 @@ const logout = document.querySelector(".logOut")
 const session = sessionStorage.getItem("userId")
 // let searchButton = document.getElementById("searchButton")
 
-console.log(eventsAPI.getAllEvents())
-
 if (session === null) {
   hideDiv.toggleLogoutDiv()
 }

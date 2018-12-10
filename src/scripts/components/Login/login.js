@@ -1,5 +1,6 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./classChanger"
+import eventContentDOM from "../Events/eventDisplay"
 function loginUser() {
   sessionStorage.clear()
   let email = document.querySelector("#login")
@@ -14,6 +15,7 @@ function loginUser() {
         hideDiv.hideLoginDiv()
         hideDiv.hideRegisterDiv()
         hideDiv.toggleLogoutDiv()
+        eventContentDOM()
         alert("Welcome")
       } else {
         alert("wrong password")
