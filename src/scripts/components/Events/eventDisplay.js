@@ -1,20 +1,20 @@
-// import eventFetching from "./fetching"
-// import eventDisplay from "./eventUserComponent"
-// // import eventFormDiv from "./eventForm"
+import eventsAPI from "./fetchEvent"
+import eventDisplay from "./eventUserComponent"
+import eventFormDiv from "./eventForm"
+import addSearchEventListener from "../../main"
 
-// let domEntry = document.querySelector(".domEntry")
-// function eventComponent(parsedevents) {
-//   parsedevents.forEach(event => {
-//     let eventContent = eventDisplay(event)
-//     domEntry.innerHTML += eventContent
-//   })
-// }
+let domEntry = document.querySelector(".domEntry")
 
-// let eventContentDOM = () => {
-//   domEntry.innerHTML = ""
-//   domEntry.innerHTML = eventFormDiv()
-//   eventFetching.getFunction()
-//     .then(parsedevents => eventComponent(parsedevents))
+function eventComponent(parsedEvents) {
+  parsedEvents.forEach(event => {
+    let eventContent = eventDisplay(event)
+    domEntry.innerHTML += eventContent
+  })
+}
 
-// }
-// export default eventContentDOM
+let eventContentDOM = () => {
+  domEntry.innerHTML = ""
+  domEntry.innerHTML = eventFormDiv()
+  addSearchEventListener()
+}
+export default eventContentDOM

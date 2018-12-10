@@ -1,10 +1,4 @@
 const hideDiv = {
-
-  // toddlgeSearchBoxDiv() {
-  //   const searchBox = document.getElementById("searchBox")
-  //   searchBox.classList.toggle("hide")
-  // },
-
   hideLoginDiv() {
     const login = document.getElementById("loginBox")
     login.classList.toggle("hide")
@@ -28,7 +22,6 @@ const hideDiv = {
     const register = document.getElementById("registerBox")
     register.classList.toggle("hide")
     this.toggleLogoutDiv()
-    // this.toggleSearchBoxDiv()
-  }
+    }
 }
 export default hideDiv
