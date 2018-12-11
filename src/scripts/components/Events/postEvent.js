@@ -1,7 +1,7 @@
 import eventsAPI from "./fetchEvent"
 import eventContentDOM from "./eventDisplay"
 function postToAPI() {
-  let locationValue = document.querySelector("#location").value
+  let locationValue = document.getElementById("#location").value
   let typeOfEventValue = document.querySelector("#typeOfEvent").value
   let dateValue = document.querySelector("#date").value
   let timeValue = document.querySelector("#time").value

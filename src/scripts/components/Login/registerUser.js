@@ -1,5 +1,6 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./classChanger"
+import eventContentDOM from "../Events/eventDisplay";
 
 function registerUser() {
   sessionStorage.clear()
@@ -17,5 +18,6 @@ function registerUser() {
   hideDiv.hideLoginDiv()
   hideDiv.hideRegisterDiv()
   hideDiv.toggleLogoutDiv()
+  eventContentDOM()
 }
 export default registerUser
