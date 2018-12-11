@@ -7,18 +7,16 @@ let eventsAPI = {
     )
     const parsedEvents = await returnEvents.json()
     return parsedEvents
-      // .then(returnedEvents => returnedEvents.json())
-      // .then(parsedEvents => parsedEvents)
   },
 
 
-  postFunction(event) {
-    return fetch("http://localhost:3000/events", {
+  postFunction(extension, obj) {
+    return fetch(`http://localhost:3000/${extension}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(event)
+      body: JSON.stringify(obj)
 
     }).then(post => post.json(event))
   },

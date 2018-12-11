@@ -11,7 +11,6 @@ function registerUser() {
     lastName: document.querySelector("#lastName").value
 
   }
-  console.log(obj)
   userAPIfunctions.postUser(obj)
     .then((response) => response.json()
     )
