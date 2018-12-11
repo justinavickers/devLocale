@@ -1,27 +1,34 @@
-import deleteEvent from "./deleteEvent"
-import postToAPI from "./postevent"
+import eventsAPI from "./fetchEvent"
 const eventListening = {
-  submitEvent() {
-    document.addEventListener("click", (obj) => {
-      if (obj.target && obj.target.id === "submitEvent") {
-        console.log(document.querySelector("#typeOfEvent").value)
-        console.log(document.querySelector("#location").value)
-        console.log(document.querySelector("#date").value)
-        console.log(document.querySelector("#time").value)
-        console.log(document.querySelector("#attendance").value)
-        console.log(document.querySelector("#company").value)
-        console.log(document.querySelector("#url").value)
+  // submitEvent() {
+  //   document.addEventListener("click", (obj) => {
+  //     if (obj.target && obj.target.id === "submitEvent") {
 
-        postToAPI()
-        console.log("submit")
+  //       postToAPI()
+  //       console.log("submit")
+  //     }
+  //   })
+  // },
+  deleteButton() {
+    document.addEventListener("click", function (event) {
+      if (event.target.textContent === "Delete") {
+        event.target.parentNode.remove()
       }
     })
   },
-  deleteButton() {
-    document.addEventListener("click", function (obj) {
-      if (obj.target && obj.target.id === "delete") {
-        let eventIdNumber = obj.target.className
-        deleteEvent(eventIdNumber)
+
+  saveButton() {
+    document.addEventListener("click", function (event) {
+      if (event.target.textContent === "Save") {
+        const parentId = event.target.parentNode.id
+        const userId = sessionStorage.getItem("userId")
+        const eventTitle = event.target.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
+          let savedEvent = {
+            eventId: parentId,
+            userId: userId,
+            eventName: eventTitle
+          }
+        eventsAPI.postFunction("events", savedEvent).then(response => console.log("posted", response))
       }
 
     })

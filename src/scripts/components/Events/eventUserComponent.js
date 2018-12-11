@@ -1,18 +1,12 @@
 function eventDisplay(event) {
-  console.log(event)
-  let events = `
-  <div class = "eventName">
-  <h3>${event.name}</h3>
-  <button id="delete" class=${event.id}>Delete</button>
+  let eventFormatted = `
+  <div id=${event.id} class = "eventName">
+    <h3>${event.name.text}</h3>
+    <p>${event.description.text}</p>
+    <button class="delete">Delete</button>
+    <button class="save">Save</button>
   </div>
   `
-  // <h3>${event.typeOfEvent}</h3>
-  // <h3>${event.date}</h3>
-  // <h3>${event.time}</h3>
-  // <h3>${event.attendance}</h3>
-  // <h3>${event.company}</h3>
-  // <h3>${event.url}</h3>
-
-  return events
+ return eventFormatted
 }
 export default eventDisplay

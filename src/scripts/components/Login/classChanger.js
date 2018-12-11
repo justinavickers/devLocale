@@ -4,6 +4,8 @@ const hideDiv = {
     login.classList.toggle("hide")
   },
 
+
+
   hideRegisterDiv() {
     const register = document.getElementById("registerBox")
     register.classList.toggle("hide")
@@ -16,7 +18,7 @@ const hideDiv = {
 
   LogOut() {
     sessionStorage.clear()
-    document.querySelector(".domEntry").innerHTML = ""
+    document.getElementById("domEntry").innerHTML = ""
     const login = document.getElementById("loginBox")
     login.classList.toggle("hide")
     const register = document.getElementById("registerBox")

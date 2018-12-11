@@ -31,14 +31,47 @@
   ],
   "events": [
     {
-      "location": "",
-      "typeOfEvent": "",
-      "date": "",
-      "time": "",
-      "attendance": "",
-      "company": "",
-      "url": "",
-      "id": 0
+      "eventId": "52227085619",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "eventId": "53159648941",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "eventId": "52227085619",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "eventId": "52227085619",
+      "userId": "1",
+      "id": 4
+    },
+    {
+      "eventId": "52227085619",
+      "userId": "1",
+      "id": 5
+    },
+    {
+      "eventId": "53159648941",
+      "userId": "1",
+      "eventName": "Protecting Kids Online (Parent Workshop)",
+      "id": 6
+    },
+    {
+      "eventId": "52227085619",
+      "userId": "1",
+      "eventName": "2018 TAMHO Annual Conference | TECHNOLOGY AND BEHAVIORAL HEALTH: The Good, The Bad, The Unknown",
+      "id": 7
+    },
+    {
+      "eventId": "53159648941",
+      "userId": "1",
+      "eventName": "Protecting Kids Online (Parent Workshop)",
+      "id": 8
     }
   ]
 }

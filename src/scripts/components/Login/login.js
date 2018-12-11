@@ -1,13 +1,11 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./classChanger"
 import eventContentDOM from "../Events/eventDisplay"
-// import eventFormDiv from "../Events/eventForm"
 function loginUser() {
   sessionStorage.clear()
   let email = document.querySelector("#login")
   userAPIfunctions.getUser(email.value)
     .then((user) => {
-      console.log(user)
       let validated = validatePassword(user)
       if (validated) {
         email = document.querySelector("#login")
@@ -25,7 +23,6 @@ function loginUser() {
 }
 
 function validatePassword(user) {
-  console.log("validating")
   const passwordValue = document.querySelector("#passwordLogin")
   if (user.password === passwordValue.value) {
     return true

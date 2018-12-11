@@ -1,10 +1,13 @@
 import eventDisplay from "./eventUserComponent"
-function eventComponent(parsedEvents) {
-  console.log(parsedEvents)
+import eventListening from "./eventListeners"
+// console.log(eventListening)
+function eventsList(parsedEvents, domEntry) {
   parsedEvents.forEach(event => {
     let eventContent = eventDisplay(event)
     domEntry.innerHTML += eventContent
   })
+  eventListening.deleteButton()
+  eventListening.saveButton()
 }
 
-export default eventComponent
+export default eventsList
