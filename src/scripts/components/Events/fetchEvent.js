@@ -1,12 +1,14 @@
 let eventsAPI = {
 
-  getAllEvents: (city) => {
+  getAllEvents: async (city) => {
     console.log("getAllEvents running", city)
-    fetch(`https://www.eventbriteapi.com/v3/events/search/?q=technology&location.address=${city},TN`,
+    const  returnEvents = await fetch(`https://www.eventbriteapi.com/v3/events/search/?q=technology&location.address=${city},TN`,
       { headers: { "Authorization": "Bearer E57DISHET3ZVIBOTJUPY" } }
     )
-      .then(returnedEvents => returnedEvents.json())
-      .then(parsedEvents => console.log(parsedEvents))
+    const parsedEvents = await returnEvents.json()
+    return parsedEvents
+      // .then(returnedEvents => returnedEvents.json())
+      // .then(parsedEvents => parsedEvents)
   },
 
 

@@ -1,16 +1,7 @@
-import eventsAPI from "./fetchEvent"
-import eventDisplay from "./eventUserComponent"
 import eventFormDiv from "./eventForm"
 import addSearchEventListener from "../../main"
 
-let domEntry = document.querySelector(".domEntry")
-
-function eventComponent(parsedEvents) {
-  parsedEvents.forEach(event => {
-    let eventContent = eventDisplay(event)
-    domEntry.innerHTML += eventContent
-  })
-}
+let domEntry = document.getElementById("domEntry")
 
 let eventContentDOM = () => {
   domEntry.innerHTML = ""
