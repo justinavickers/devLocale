@@ -1,6 +1,7 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./classChanger"
 import eventContentDOM from "../Events/eventDisplay"
+import newEventDOM from "../createEvents/createEvent";
 function loginUser() {
   sessionStorage.clear()
   let email = document.querySelector("#login")

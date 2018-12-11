@@ -9,7 +9,6 @@ let eventsAPI = {
     return parsedEvents
   },
 
-
   postFunction(extension, obj) {
     return fetch(`http://localhost:3000/${extension}`, {
       method: "POST",
