@@ -18,5 +18,6 @@ function registerUser() {
   hideDiv.hideRegisterDiv()
   hideDiv.toggleLogoutDiv()
   eventContentDOM()
+
 }
 export default registerUser

@@ -1,6 +1,5 @@
 import eventDisplay from "./eventUserComponent"
 import eventListening from "./eventListeners"
-// console.log(eventListening)
 function eventsList(parsedEvents, domEntry) {
   parsedEvents.forEach(event => {
     let eventContent = eventDisplay(event)
