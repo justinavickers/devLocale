@@ -1,10 +1,6 @@
-import newEvent from "./createComponent"
 import newEvListen from "./newEvListeners"
-function newEventsList(parsedEvents, domEntry) {
-  parsedEvents.forEach(event => {
-    let eventCreate = newEvent(event)
-    domEntry.innerHTML += eventCreate
-  })
-   newEvListen.saveButton()
+function newEventsList() {
+   newEvListen.showCreateEventForm()
+   newEvListen.createEventBtn()
 }
 export default newEventsList

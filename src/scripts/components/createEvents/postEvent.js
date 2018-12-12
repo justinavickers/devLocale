@@ -1,21 +1,28 @@
+import eventsAPI from "../Events/fetchEvent"
+// import newEvent from "./createComponent";
+function postToAPI() {
+  let nameValue = document.getElementById("name").value
+  let eventDescriptionValue = document.querySelector("#eventDescription").value
+  let latitudeValue = document.querySelector("#latitudeEvent").value
+  let longitudeValue = document.querySelector("#longitudeEvent").value
+  let startEventValue = document.querySelector("#startEventDate").value
+  let endEventValue = document.querySelector("#endEventDate").value
+  let startTimeValue = document.querySelector("#startTimeEvent").value
+  let endTimeValue = document.querySelector("#endTimeEvent").value
 
-// function postToAPI() {
-//   let locationValue = document.getElementById("#location").value
-//   let typeOfEventValue = document.querySelector("#typeOfEvent").value
-//   let dateValue = document.querySelector("#date").value
-//   let timeValue = document.querySelector("#time").value
-//   let companyValue = document.querySelector("#company").value
-//   let urlValue = document.querySelector("#url").value
+  let object = {
+    name: nameValue,
+    eventDescription: eventDescriptionValue,
+    latitudeEvent: latitudeValue,
+    longitudeEvent: longitudeValue,
+    startEventDate: startEventValue,
+    endEventDate: endEventValue,
+    startTimeValue: startTimeValue,
+    endTimeValue: endTimeValue
+  }
+  eventsAPI.postFunction("createdEvents", object).then(chickensandwich => {
+    console.log(chickensandwich)
+  })
+}
 
-//   let object = {
-//     location: locationValue,
-//     typeOfEvent: typeOfEventValue,
-//     date: dateValue,
-//     time: timeValue,
-//     company: companyValue,
-//     url: urlValue
-//   }
-//   eventsAPI.postFunction(object).then(() => {
-//     // eventContentDOM()
-//   })
-// }
+export default postToAPI

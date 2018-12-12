@@ -14,7 +14,6 @@
       "lastName": "Tarantula",
       "id": 2
     }
-
   ],
   "events": [
     {
@@ -23,42 +22,95 @@
       "id": 1
     },
     {
-      "eventId": "53159648941",
+      "eventId": "52499660899",
       "userId": "1",
+      "eventName": "GRI Technology Pell City",
       "id": 2
     },
     {
-      "eventId": "52227085619",
+      "eventId": "52499660899",
       "userId": "1",
+      "eventName": "GRI Technology Pell City",
       "id": 3
     },
     {
-      "eventId": "52227085619",
+      "eventId": "52499660899",
       "userId": "1",
+      "eventName": "GRI Technology Pell City",
       "id": 4
     },
     {
-      "eventId": "52227085619",
+      "eventId": "52499660899",
       "userId": "1",
+      "eventName": "GRI Technology Pell City",
       "id": 5
     },
     {
-      "eventId": "53159648941",
+      "eventId": "52885814896",
       "userId": "1",
-      "eventName": "Protecting Kids Online (Parent Workshop)",
+      "eventName": "Technology For Real Estate Professionals",
       "id": 6
     },
     {
-      "eventId": "52227085619",
+      "eventId": "52885814896",
       "userId": "1",
-      "eventName": "2018 TAMHO Annual Conference | TECHNOLOGY AND BEHAVIORAL HEALTH: The Good, The Bad, The Unknown",
+      "eventName": "Technology For Real Estate Professionals",
       "id": 7
+    }
+  ],
+  "createdEvents": [
+    {
+      "eventDescription": "",
+      "latitudeEvent": "",
+      "longitudeEvent": "",
+      "startEventDate": "",
+      "endEventDate": "",
+      "startTime": "",
+      "endTime": "",
+      "id": 0
     },
     {
-      "eventId": "53159648941",
-      "userId": "1",
-      "eventName": "Protecting Kids Online (Parent Workshop)",
-      "id": 8
+      "eventDescription": "",
+      "latitudeEvent": "",
+      "longitudeEvent": "",
+      "startEventDate": "",
+      "endEventDate": "",
+      "startTimeValue": "10:00AM",
+      "endTimeValue": "1:00PM",
+      "id": 1
+    },
+    {
+      "name": "justinaV",
+      "eventDescription": "adf",
+      "latitudeEvent": "ml",
+      "longitudeEvent": "",
+      "startEventDate": "2018-12-21",
+      "endEventDate": "",
+      "startTimeValue": "10:00AM",
+      "endTimeValue": "1:00PM",
+      "id": 2
+    },
+    {
+      "name": "",
+      "eventDescription": "",
+      "latitudeEvent": "",
+      "longitudeEvent": "",
+      "startEventDate": "",
+      "endEventDate": "",
+      "startTimeValue": "",
+      "endTimeValue": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "eventDescription": "",
+      "latitudeEvent": "",
+      "longitudeEvent": "",
+      "startEventDate": "",
+      "endEventDate": "",
+      "startTimeValue": "",
+      "endTimeValue": "",
+      "id": 4
     }
   ]
 }

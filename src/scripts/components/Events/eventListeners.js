@@ -1,14 +1,5 @@
 import eventsAPI from "./fetchEvent"
 const eventListening = {
-  // submitEvent() {
-  //   document.addEventListener("click", (obj) => {
-  //     if (obj.target && obj.target.id === "submitEvent") {
-
-  //       postToAPI()
-  //       console.log("submit")
-  //     }
-  //   })
-  // },
   deleteButton() {
     document.addEventListener("click", function (event) {
       if (event.target.textContent === "Delete") {
@@ -19,7 +10,9 @@ const eventListening = {
 
   saveButton() {
     document.addEventListener("click", function (event) {
+        console.log("hi2")
       if (event.target.textContent === "Save") {
+        console.log("hi")
         const parentId = event.target.parentNode.id
         const userId = sessionStorage.getItem("userId")
         const eventTitle = event.target.previousElementSibling.previousElementSibling.previousElementSibling.textContent;
