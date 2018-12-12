@@ -13,21 +13,8 @@
       "firstName": "Kevin",
       "lastName": "Tarantula",
       "id": 2
-    },
-    {
-      "email": "justinav38@gmail.com",
-      "password": "monkey",
-      "firstName": "Justina",
-      "lastName": "Vickers",
-      "id": 3
-    },
-    {
-      "email": "justinav38@gmail.com",
-      "password": "ice",
-      "firstName": "Justina",
-      "lastName": "Vickers",
-      "id": 4
     }
+
   ],
   "events": [
     {

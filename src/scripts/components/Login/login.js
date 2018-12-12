@@ -3,11 +3,13 @@ import hideDiv from "./classChanger"
 import eventContentDOM from "../Events/eventDisplay"
 function loginUser() {
   sessionStorage.clear()
+  console.log("logging in running")
   let email = document.querySelector("#login")
   userAPIfunctions.getUser(email.value)
     .then((user) => {
       let validated = validatePassword(user)
       if (validated) {
+        console.log("in the if")
         email = document.querySelector("#login")
         sessionStorage.setItem("userId", user.id)
         sessionStorage.setItem("email", email.value)

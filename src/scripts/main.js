@@ -3,7 +3,6 @@ import hideDiv from "./components/Login/classChanger"
 import loginUser from "./components/Login/login"
 import eventsAPI from "./components/Events/fetchEvent"
 import eventsList from "./components/Events/eventList"
-// import "../lib/node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import newEventDOM from "./components/createEvents/createEvent";
 
 let existingUserButton = document.getElementById("loginButton")

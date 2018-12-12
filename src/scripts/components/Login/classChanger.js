@@ -4,8 +4,6 @@ const hideDiv = {
     login.classList.toggle("hide")
   },
 
-
-
   hideRegisterDiv() {
     const register = document.getElementById("registerBox")
     register.classList.toggle("hide")
