@@ -3,13 +3,13 @@ import hideDiv from "./components/Login/classChanger"
 import loginUser from "./components/Login/login"
 import eventsAPI from "./components/Events/fetchEvent"
 import eventsList from "./components/Events/eventList"
-import newEventDOM from "./components/createEvents/createEvent";
+// import "../lib/node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import newEventDOM from "./components/createEvents/createEvent";
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 const logout = document.querySelector(".logOut")
 const session = sessionStorage.getItem("userId")
-let createEvBtn = document.getElementById("createEvent")
 
 if (session === null) {
   hideDiv.toggleLogoutDiv()
@@ -36,9 +36,4 @@ function addSearchEventListener() {
     eventsList(response.events, domEntry)
   })
 }
-
-createEvBtn.addEventListener("click", () => {
-newEventDOM(response.events, domEntry)
-})
-
 export default addSearchEventListener
