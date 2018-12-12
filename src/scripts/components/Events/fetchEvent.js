@@ -10,6 +10,7 @@ let eventsAPI = {
   },
 
   postFunction(extension, obj) {
+    console.log("posting?")
     return fetch(`http://localhost:3000/${extension}`, {
       method: "POST",
       headers: {
@@ -17,7 +18,8 @@ let eventsAPI = {
       },
       body: JSON.stringify(obj)
 
-    }).then(post => post.json(event))
+    })
+      .then(post => post.json())
   },
 
     putFunction(event, id) {

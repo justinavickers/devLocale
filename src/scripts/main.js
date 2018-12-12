@@ -3,12 +3,15 @@ import hideDiv from "./components/Login/classChanger"
 import loginUser from "./components/Login/login"
 import eventsAPI from "./components/Events/fetchEvent"
 import eventsList from "./components/Events/eventList"
-// import newEventDOM from "./components/createEvents/createEvent";
+import newEventsList from "./components/createEvents/newEventList"
+// import newEvListen from "/components/createEvents/newEvListeners"
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
 const logout = document.querySelector(".logOut")
 const session = sessionStorage.getItem("userId")
+
+
 
 if (session === null) {
   hideDiv.toggleLogoutDiv()
@@ -26,6 +29,8 @@ existingUserButton.addEventListener("click", () => {
   loginUser()
 })
 
+
+
 function addSearchEventListener() {
   let searchButton = document.getElementById("searchBoxButton")
   searchButton.addEventListener("click", async () => {
@@ -33,6 +38,7 @@ function addSearchEventListener() {
     const response = await eventsAPI.getAllEvents(searchBox.value)
     const domEntry = document.getElementById("domEntry")
     eventsList(response.events, domEntry)
+    // newEventsList()
   })
 }
 export default addSearchEventListener

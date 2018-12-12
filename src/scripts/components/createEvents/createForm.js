@@ -1,6 +1,6 @@
 function createEventFormDiv() {
   let createEvent = `
-<form>
+<div>
 <div class="form-group">
 <label for="name">Name</label>
 <input type="text" id="name" class="name" placeholder="Name of Event" value="" name="name">
@@ -41,9 +41,9 @@ function createEventFormDiv() {
 <input type="text" id="endTimeEvent" class="endTimeEvent" placeholder="Time" value="" name="endTimeEvent">
 </div>
 
-<button type="submit" id="createEvent" class="btn btn-primary">Add Event</button>
-
-</form>
+<button id="createEvent" class="btn btn-primary">Add Event</button>
+<button type="submit" id="backToSearch" class="backToSearch">Back to Search</button>
+</div>
 `
   return createEvent
 }
