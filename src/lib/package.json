@@ -24,6 +24,8 @@
     "nss-domcomponent": "^0.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3"
+    "bootstrap": "^4.1.3",
+    "eventbrite": "^1.0.3",
+    "moment": "^2.23.0"
   }
 }

@@ -1,6 +1,7 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./classChanger"
 import eventContentDOM from "../Events/eventDisplay"
+
 function loginUser() {
   sessionStorage.clear()
   console.log("logging in running")
@@ -23,6 +24,19 @@ function loginUser() {
       }
     })
 }
+
+// function getOrganizationId() {
+//   return fetch("https://www.eventbriteapi.com/v3/users/me/organizations",{
+//     headers: {
+//        "Authorization": "Bearer E57DISHET3ZVIBOTJUPY"
+//       // "Content-Type": "application/json"
+//     }
+//   })
+//   .then(results => results.json())
+//   .then(results => console.log(results))
+// }
+
+// getOrganizationId()
 
 function validatePassword(user) {
   const passwordValue = document.querySelector("#passwordLogin")
