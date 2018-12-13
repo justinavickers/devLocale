@@ -15,7 +15,7 @@ function postEventListener() {
   const postEventBtn = document.getElementById("createEvent");
   postEventBtn.addEventListener("click", () => {
     console.log("posting event...");
-    postToAPI()
+    postToAPI().then(results => console.log(results))
   });
 }
 

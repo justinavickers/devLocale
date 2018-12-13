@@ -10,6 +10,7 @@ let eventsAPI = {
   },
 
   postFunction(extension, obj) {
+    console.log("fetchEvent File")
     console.log("posting?")
     return fetch(`http://localhost:3000/${extension}`, {
       method: "POST",
@@ -20,6 +21,7 @@ let eventsAPI = {
 
     })
       .then(post => post.json())
+      .then(answer => console.log(answer))
   },
 
     putFunction(event, id) {
