@@ -1,6 +1,7 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./classChanger"
 import eventContentDOM from "../Events/eventDisplay"
+
 function loginUser() {
   sessionStorage.clear()
   console.log("logging in running")

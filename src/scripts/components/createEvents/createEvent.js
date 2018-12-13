@@ -19,7 +19,6 @@ function postEventListener() {
   });
 }
 
-
 let newEventDOM = () => {
   domEntry.innerHTML = ""
   domEntry.innerHTML = createEventFormDiv();

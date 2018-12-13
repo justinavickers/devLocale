@@ -9,8 +9,8 @@ function registerUser() {
     password: document.querySelector("#passwordRegister").value,
     firstName: document.querySelector("#firstName").value,
     lastName: document.querySelector("#lastName").value
-
   }
+
   userAPIfunctions.postUser(obj)
     .then((response) => response.json()
     )
@@ -18,6 +18,6 @@ function registerUser() {
   hideDiv.hideRegisterDiv()
   hideDiv.toggleLogoutDiv()
   eventContentDOM()
-
 }
+
 export default registerUser

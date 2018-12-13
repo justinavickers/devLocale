@@ -11,7 +11,6 @@ function newEvent(event) {
     <p>${event.endTime}</p>
   <button id="createEvent">Add Event</button>
   <button id="backToSearch">Back To Search</button>
-
   </div>
   `
  return createNewEvent
