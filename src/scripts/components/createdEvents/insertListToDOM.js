@@ -1,5 +1,6 @@
 import retrieveEventsList from "./fetching"
 import displayList from "./displayList"
+import createListeners from "../editEvent/listeners"
 
 async function insertListToDOM(){
   const list = await retrieveEventsList()
@@ -9,6 +10,7 @@ async function insertListToDOM(){
 
   domEntry.innerHTML = ""
   domEntry.innerHTML += html
+  createListeners(list.events, list.venues)
 }
 
 export default insertListToDOM
