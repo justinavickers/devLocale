@@ -4,8 +4,17 @@ import eventbrite from "eventbrite"
 import * as Moment from "moment"
  async function postToAPI() {
   const venueCreated = await createVenue()
+  console.log(venueCreated)
   let x = await createEvent(venueCreated.id)
   console.log(x)
+  await fetch("http://localhost:3000/createdevents", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({eventId: x.id, venueId: venueCreated.id})
+
+  })
   alert("Event successfully created!")
  }
 

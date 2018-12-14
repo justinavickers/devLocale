@@ -5,13 +5,13 @@ import eventContentDOM from "../Events/eventDisplay"
 function loginUser() {
   sessionStorage.clear()
   console.log("logging in running")
-  let email = document.querySelector("#login")
+  let email = document.getElementById("loginEmail")
   userAPIfunctions.getUser(email.value)
     .then((user) => {
       let validated = validatePassword(user)
       if (validated) {
         console.log("in the if")
-        email = document.querySelector("#login")
+        email = document.getElementById("loginEmail")
         sessionStorage.setItem("userId", user.id)
         sessionStorage.setItem("email", email.value)
         hideDiv.hideLoginDiv()
