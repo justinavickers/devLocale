@@ -101,38 +101,16 @@
       "id": 13
     }
   ],
-  "createdEvents": [
+  "createdevents": [
     {
-      "eventDescription": "",
-      "latitudeEvent": "",
-      "longitudeEvent": "",
-      "startEventDate": "",
-      "endEventDate": "",
-      "startTime": "",
-      "endTime": "",
-      "id": 0
-    },
-    {
-      "name": "justinaV",
-      "eventDescription": "adf",
-      "latitudeEvent": "",
-      "longitudeEvent": "",
-      "startEventDate": "",
-      "endEventDate": "",
-      "startTimeValue": "10:00AM",
-      "endTimeValue": "",
-      "id": 1
-    },
-    {
-      "name": "justinaV",
-      "eventDescription": "adf",
-      "latitudeEvent": "",
-      "longitudeEvent": "",
-      "startEventDate": "",
-      "endEventDate": "",
-      "startTimeValue": "",
-      "endTimeValue": "",
+      "eventId": "53717332989",
+      "venueId": "28342219",
       "id": 2
+    },
+    {
+      "eventId": "53718820438",
+      "venueId": "28342757",
+      "id": 3
     }
   ]
 }

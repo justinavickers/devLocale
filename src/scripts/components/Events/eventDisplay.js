@@ -9,5 +9,6 @@ let eventContentDOM = () => {
   domEntry.innerHTML = eventFormDiv()
   addSearchEventListener()
   newEvListen.showCreateEventForm()
+  newEvListen.showCreatedEventsList()
 }
 export default eventContentDOM
