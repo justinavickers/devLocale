@@ -1,6 +1,7 @@
 import createEventFormDiv from "./createForm";
 import eventContentDOM from "../Events/eventDisplay";
 import postToAPI from "./postEvent";
+import newEvListeners from "./newEvListeners"
 
 let domEntry = document.getElementById("domEntry")
 
@@ -24,5 +25,6 @@ let newEventDOM = () => {
   domEntry.innerHTML = createEventFormDiv();
   returntoSearchListener();
   postEventListener();
+  newEvListeners.goBack()
 }
 export default newEventDOM

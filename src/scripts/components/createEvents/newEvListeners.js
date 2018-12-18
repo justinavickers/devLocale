@@ -1,5 +1,6 @@
 import newEventDOM from "./createEvent"
 import insertListToDOM from "../createdEvents/insertListToDOM";
+import eventContentDOM from "../Events/eventDisplay"
 
 const newEvListen = {
   showCreateEventForm: () => {
@@ -12,6 +13,12 @@ const newEvListen = {
     let mySavedEventsBtn = document.getElementById("mySavedEvents")
     mySavedEventsBtn.addEventListener("click", () => {
       insertListToDOM()
+    })
+  },
+  goBack: () => {
+    let backToSearchBtn = document.getElementById("backToSearch")
+    backToSearchBtn.addEventListener("click", () => {
+      eventContentDOM()
     })
   }
 }

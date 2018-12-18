@@ -1,6 +1,7 @@
 import displayItem from "./displayItem"
 
 function displayList(events, venues) {
+  console.log(events, venues)
   let html = "<ul class=\"list-group\">"
   const itemsToDisplay = events.forEach((event) => {
     const venue = venues.find((v)=> v.id === event.venue_id)
