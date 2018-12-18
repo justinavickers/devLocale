@@ -15,7 +15,8 @@ const hideDiv = {
   },
 
   LogOut() {
-    sessionStorage.clear()
+    sessionStorage.removeItem("userId")
+    sessionStorage.removeItem("email")
     document.getElementById("domEntry").innerHTML = ""
     const login = document.getElementById("loginBox")
     login.classList.toggle("hide")
