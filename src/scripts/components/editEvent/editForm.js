@@ -1,10 +1,10 @@
 import * as Moment from "moment"
 function editEventFormDiv(event, venue) {
-  const startDate = Moment.default(event.start.utc).format("YYYY-MM-DD")
-  const endDate = Moment.default(event.end.utc).format("YYYY-MM-DD")
-  const startTime = Moment.default(event.start.utc).format("hh:mm A")
-  const endTime = Moment.default(event.end.utc).format("hh:mm A")
-
+  const startDate = Moment.default(event.start.utc).format("YYYY-MM-DD");
+  const endDate = Moment.default(event.end.utc).format("YYYY-MM-DD");
+  const startTime = Moment.default(event.start.utc).format("HH:mm");
+  const endTime = Moment.default(event.end.utc).format("HH:mm");
+console.log(startTime)
 
 
   let editEvent = `
@@ -70,7 +70,7 @@ function editEventFormDiv(event, venue) {
   </div>
 
 
-  <button id="editButton" class="btn btn-primary">Edit</button>
+  <button id="editButton" class="btn btn-primary">Submit</button>
   <button type="submit" id="backToSearch" class="backToSearch">Back to Search</button>
   </div>
   `
