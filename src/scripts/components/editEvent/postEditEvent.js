@@ -2,23 +2,18 @@
 import {eventBriteCredentials} from "../../APIconfig"
 import eventbrite from "eventbrite"
 import * as Moment from "moment"
- async function postToAPI() {
-  const venueCreated = await createVenue()
-  console.log(venueCreated)
-  let x = await createEvent(venueCreated.id)
-  console.log(x)
-  await fetch("http://localhost:3000/createdevents", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({eventId: x.id, venueId: venueCreated.id})
 
-  })
-  alert("Event successfully created!")
+ async function postToAPI() {
+  const venueUpdated = await editVenue()
+  console.log(venueUpdated)
+  let x = await editEvent(venueUpdated.id)
+  console.log(x)
+
+  alert("Event successfully updated!")
  }
 
-async function createEvent(venue_id) {
+async function editEvent(venue_id) {
+  const eventId = sessionStorage.getItem("eventId")
   let startDate = document.getElementById("startEventDate").value
   let startTime = document.getElementById("startTimeEvent").value
   let startEvent = startDate + " " + startTime
@@ -33,7 +28,7 @@ async function createEvent(venue_id) {
         html: document.getElementById("name").value
       },
       description: {
-        html: document.getElementById("name").value
+        html: document.getElementById("eventDescription").value
       },
       start: {
         timezone: "America/Chicago",
@@ -51,18 +46,19 @@ async function createEvent(venue_id) {
 
   const sdk = await eventbrite({token: eventBriteCredentials.oAuthToken})
 
-  const eventCreated = await sdk
-  .request("/events/", {
+  const eventUpdated = await sdk
+  .request("/events/" + eventId + "/", {
     method: "POST",
     "Content-Type": "application/json",
     body: JSON.stringify(body),
   })
 
 
-  return eventCreated
+  return eventUpdated
 }
 
-async function createVenue() {
+async function editVenue() {
+  const venueId = sessionStorage.getItem("venueId")
   const body = {
     venue: {
       name: document.getElementById("venueName").value,
@@ -78,14 +74,14 @@ async function createVenue() {
   }
   const sdk = await eventbrite({token: eventBriteCredentials.oAuthToken})
 
-  const venueCreated = await sdk
-  .request("/venues/", {
+  const venueUpdated = await sdk
+  .request("/venues/" + venueId + "/", {
     method: "POST",
     "Content-Type": "application/json",
     body: JSON.stringify(body),
   })
 
-  return venueCreated
+  return venueUpdated
 }
 
 

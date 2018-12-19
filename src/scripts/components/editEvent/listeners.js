@@ -6,6 +6,8 @@ function createListeners(events, venues){
       console.log(event.id)
       const venue = venues.find((v) => v.id === event.venue_id)
       insertEditFormToDOM(event, venue)
+      sessionStorage.setItem("venueId", venue.id)
+      sessionStorage.setItem("eventId", event.id )
     })
   });
 }
