@@ -53,7 +53,6 @@ async function editEvent(venue_id) {
     body: JSON.stringify(body),
   })
 
-
   return eventUpdated
 }
 

@@ -3,7 +3,7 @@ import hideDiv from "./components/Login/classChanger"
 import loginUser from "./components/Login/login"
 import eventsAPI from "./components/Events/fetchEvent"
 import eventsList from "./components/Events/eventList"
-import newEventsList from "./components/createEvents/newEventList"
+import newEvListen from "./components/createEvents/newEvListeners";
 
 let existingUserButton = document.getElementById("loginButton")
 let newUsers = document.getElementById("signUpButton")
@@ -34,6 +34,8 @@ function addSearchEventListener() {
     const response = await eventsAPI.getAllEvents(searchBox.value)
     const domEntry = document.getElementById("domEntry")
     eventsList(response.events, domEntry)
+    newEvListen.showCreateEventForm()
+    newEvListen.showCreatedEventsList()
   })
 }
 export default addSearchEventListener
