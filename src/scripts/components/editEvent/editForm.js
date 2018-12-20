@@ -71,7 +71,7 @@ console.log(startTime)
 
 
   <button id="editButton" class="btn btn-primary">Submit</button>
-  <button type="submit" id="backToSearch" class="backToSearch">Back to Search</button>
+  <button type="submit" id="backToMySavedEvents" class="backToMySavedEvents">Back to Saved Events</button>
   </div>
   `
   return editEvent
