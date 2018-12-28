@@ -1,6 +1,6 @@
 import registerUser from "./components/Login/registerUser"
 import hideDiv from "./components/Login/classChanger"
-import loginUser from "./components/Login/login"
+import loginUser from "./components/Login/loginForm"
 import eventsAPI from "./components/Events/fetchEvent"
 import eventsList from "./components/Events/eventList"
 import newEvListen from "./components/createEvents/newEvListeners";
