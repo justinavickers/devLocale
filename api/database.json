@@ -20,6 +20,13 @@
       "firstName": "Deanna",
       "lastName": "Vickers",
       "id": 3
+    },
+    {
+      "email": "asjdkl@aol.com",
+      "firstName": "Tom",
+      "lastName": "Waits",
+      "password": "rain",
+      "id": 4
     }
   ],
   "events": [

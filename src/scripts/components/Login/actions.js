@@ -1,4 +1,4 @@
-// import insertRegisterIntoDOM from "../Register/insertRegisterIntoDOM";
+import insertRegisterIntoDOM from "../Register/insertRegisterIntoDOM";
 // import insertNavBarIntoDOM from "../NavBar/insertNavBarIntoDOM";
 import eventContentDOM from "../Events/eventDisplay";
 import userAPIfunctions from "./fetching"
@@ -37,7 +37,7 @@ function validatePassword(user) {
 
 export function establishActions() {
   const signUpButton = document.getElementById("loginSignUpBtn");
-  signUpButton.addEventListener("click", () => console.log("registerUser"));
+  signUpButton.addEventListener("click", insertRegisterIntoDOM);
 
   const signInButton = document.getElementById("loginSignInBtn");
   signInButton.addEventListener("click", loginUser);
