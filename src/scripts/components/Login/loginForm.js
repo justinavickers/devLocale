@@ -45,7 +45,7 @@ export default function getLoginForm() {
         </div>
       </div>
 
-      <div class="col-md-2 col-lg-2">
+      <div class="col-md-2 col-lg-2"></div>
     </div>
   `;
 

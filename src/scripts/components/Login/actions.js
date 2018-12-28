@@ -1,8 +1,9 @@
-import insertRegisterIntoDOM from "../Register/insertRegisterIntoDOM";
-import insertNavBarIntoDOM from "../NavBar/insertNavBarIntoDOM";
+// import insertRegisterIntoDOM from "../Register/insertRegisterIntoDOM";
+// import insertNavBarIntoDOM from "../NavBar/insertNavBarIntoDOM";
 import eventContentDOM from "../Events/eventDisplay";
 import userAPIfunctions from "./fetching"
 import { hideSpinner, showSpinner } from "../../spinner";
+import registerUser from "./registerUser";
 
 function loginUser() {
   showSpinner();
@@ -17,7 +18,7 @@ function loginUser() {
         sessionStorage.setItem("userId", user.id)
         sessionStorage.setItem("email", email.value)
         alert("Welcome");
-        insertNavBarIntoDOM();
+        // insertNavBarIntoDOM();
         eventContentDOM();
       } else {
         alert("wrong password")
@@ -36,7 +37,7 @@ function validatePassword(user) {
 
 export function establishActions() {
   const signUpButton = document.getElementById("loginSignUpBtn");
-  signUpButton.addEventListener("click", insertRegisterIntoDOM);
+  signUpButton.addEventListener("click", () => console.log("registerUser"));
 
   const signInButton = document.getElementById("loginSignInBtn");
   signInButton.addEventListener("click", loginUser);
