@@ -1,16 +1,18 @@
-// import eventsAPI from "../Events/fetchEvent"
 import {eventBriteCredentials} from "../../APIconfig"
+import insertListToDOM from "../createdEvents/insertListToDOM";
+import { hideSpinner, showSpinner } from "../../spinner";
 import eventbrite from "eventbrite"
 import * as Moment from "moment"
 
- async function postToAPI() {
+async function postToAPI() {
+  showSpinner();
   const venueUpdated = await editVenue()
-  console.log(venueUpdated)
   let x = await editEvent(venueUpdated.id)
-  console.log(x)
 
+  hideSpinner();
   alert("Event successfully updated!")
- }
+  insertListToDOM()
+}
 
 async function editEvent(venue_id) {
   const eventId = sessionStorage.getItem("eventId")
