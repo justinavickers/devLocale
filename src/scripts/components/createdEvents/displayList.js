@@ -1,15 +1,14 @@
 import displayItem from "./displayItem"
 
 function displayList(events, venues) {
-  console.log(events, venues)
-  let html = "<button type=\"submit\" id=\"backToSearch\" class=\"backToSearch\">Back to Search</button><ul class=\"list-group\">"
+  let html = "";
+
   const itemsToDisplay = events.forEach((event) => {
     const venue = venues.find((v)=> v.id === event.venue_id)
     html += displayItem(event, venue)
   })
-  html += "</ul>"
-  console.log(html)
-return html
+
+  return html;
 }
 
 export default displayList
