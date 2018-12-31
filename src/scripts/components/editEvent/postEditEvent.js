@@ -85,6 +85,13 @@ async function editVenue() {
   return venueUpdated
 }
 
+export function deleteEvent(event){
+  console.log("DATA TYPE", typeof event)
+  console.log(">>>> EVENT: ", event);
+  return fetch(`http://localhost:3000/createdevents/${event.createdEventId}`, {
+    method: "DELETE",
+  }).then(res => res.json());
+}
+
 
 export default postToAPI
-

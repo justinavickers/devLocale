@@ -34,7 +34,7 @@ async function retrieveEventsList(){
   for(let index = 0; index<createdEvents.length; index++){
     const event = await retrieveEvent(createdEvents[index].eventId)
     const venue = await retrieveVenue(event.venue_id)
-    eventsList.push(event)
+    eventsList.push(Object.assign({}, event, {createdEventId:createdEvents[index].id}))
     venuesList.push(venue)
   }
   return {events:eventsList, venues:venuesList}
