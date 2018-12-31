@@ -1,5 +1,5 @@
 import insertRegisterIntoDOM from "../Register/insertRegisterIntoDOM";
-// import insertNavBarIntoDOM from "../NavBar/insertNavBarIntoDOM";
+import insertNavBarIntoDOM from "../NavBar/insertNavBarIntoDOM";
 import eventContentDOM from "../Events/eventDisplay";
 import userAPIfunctions from "./fetching"
 import { hideSpinner, showSpinner } from "../../spinner";
@@ -18,7 +18,7 @@ function loginUser() {
         sessionStorage.setItem("userId", user.id)
         sessionStorage.setItem("email", email.value)
         alert("Welcome");
-        // insertNavBarIntoDOM();
+        insertNavBarIntoDOM();
         eventContentDOM();
       } else {
         alert("wrong password")
