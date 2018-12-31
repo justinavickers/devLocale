@@ -1,6 +1,6 @@
 import insertRegisterIntoDOM from "../Register/insertRegisterIntoDOM";
 import insertNavBarIntoDOM from "../NavBar/insertNavBarIntoDOM";
-import eventContentDOM from "../Events/eventDisplay";
+import eventContentDOM from "../Search/eventDisplay";
 import userAPIfunctions from "./fetching"
 import { hideSpinner, showSpinner } from "../../spinner";
 import registerUser from "./registerUser";

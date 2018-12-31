@@ -1,4 +1,4 @@
-// import eventsAPI from "../Events/fetchEvent"
+// import eventsAPI from "../Search/fetchEvent"
 import {eventBriteCredentials} from "../../APIconfig"
 import eventbrite from "eventbrite"
 import * as Moment from "moment"

@@ -1,6 +1,6 @@
 import userAPIfunctions from "./fetching"
 import hideDiv from "./classChanger"
-import eventContentDOM from "../Events/eventDisplay";
+import eventContentDOM from "../Search/eventDisplay";
 
 function registerUser() {
   sessionStorage.clear()

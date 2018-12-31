@@ -1,12 +1,21 @@
 function eventFormDiv() {
   let searchEvents = `
-<div id="searchBoxContainer">
-<input type="text" id="searchBox" class="searchBox" placeholder="searchBox" value="">
-<button type="submit" id="searchBoxButton" class="btn btn-primary">Search</button>
-<button type="submit" id="showCreateEventForm" class="btn btn-primary">Add New Event</button>
-<button type="submit" id="mySavedEvents" class="btn btn-primary">My Saved Events</button>
-</div>
-`
+    <div class="row px-4 mt-4 mb-4">
+      <div class="col-lg-10">
+        <div class="form-group">
+          <input type="text" class="form-control" id="searchBox" placeholder="Write a keyword">
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <button type="submit" id="searchBoxButton" class="btn btn-primary form-control">Search</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="eventsFromSearching">
+      </div>
+    </div>
+  `;
+
 return searchEvents
 }
 export default eventFormDiv

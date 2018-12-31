@@ -1,11 +1,18 @@
 function eventDisplay(event) {
   let eventFormatted = `
-  <div id=${event.id} class = "eventName">
-    <h3>${event.name.text}</h3>
-    <p>${event.description.text}</p>
-    <button class="save">Save</button>
+    <div class="row mb-3 mx-3">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-info">${event.name.text}</h5>
+            <p class="card-text">${event.description.text}</p>
+            <a href="javascript:void(0)" class="card-link">Save</a>
+          </div>
+        </div>
+      </div>
     </div>
-    `
+  `
+
  return eventFormatted
 }
 export default eventDisplay
