@@ -1,5 +1,4 @@
 import eventFormDiv from "./eventForm"
-import newEvListen from  "../createEvents/newEvListeners"
 import { establishActions } from "./actions"
 
 let domEntry = document.getElementById("domEntry")

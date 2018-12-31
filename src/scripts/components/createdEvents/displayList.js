@@ -1,5 +1,4 @@
 import displayItem from "./displayItem"
-import newEvListen from "../createEvents/newEvListeners";
 
 function displayList(events, venues) {
   console.log(events, venues)
