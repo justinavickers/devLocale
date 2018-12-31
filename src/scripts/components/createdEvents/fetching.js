@@ -2,7 +2,8 @@ import {eventBriteCredentials} from "../../APIconfig"
 import eventbrite from "eventbrite"
 
 async function retrieveCreatedEvents(){
-  const response = await fetch("http://localhost:3000/createdevents",{
+  const userId = sessionStorage.getItem("userId");
+  const response = await fetch(`http://localhost:3000/createdevents?userId=${userId}`, {
     method: "GET"
 })
   const createdevents = await response.json()

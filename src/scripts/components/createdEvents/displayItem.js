@@ -1,20 +1,20 @@
 function displayItem(event, venue) {
-
-  let item =
-  `
-  <li class="list-group-item">
-    <div class="row">
+  let item = `
+    <div class="row mt-3 mx-3">
       <div class="col-lg-12">
-        <h3>${event.name.text}</h3>
-        <p>${event.description.text}</p>
-        <p>Where: ${venue.name}</p>
-        <button type="submit" id="editEvent${event.id}" class="btn btn-primary">Edit</button>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-info">${event.name.text}</h5>
+            <p class="card-text">${event.description.text}</p>
+            <p><strong class="text-success">Where:</strong> ${venue.name}</p>
+            <a id="editEvent${event.id}" href="javascript:void(0)" class="card-link">Edit</a>
+          </div>
         </div>
+      </div>
     </div>
-  </li>
-`
-console.log(item)
-return item
+  `;
+
+  return item
 }
 
 export default displayItem

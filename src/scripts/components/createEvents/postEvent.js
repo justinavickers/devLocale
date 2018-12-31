@@ -1,22 +1,49 @@
-// import eventsAPI from "../Search/fetchEvent"
-import {eventBriteCredentials} from "../../APIconfig"
+import { eventBriteCredentials } from "../../APIconfig"
+import { hideSpinner, showSpinner } from "../../spinner";
 import eventbrite from "eventbrite"
 import * as Moment from "moment"
- async function postToAPI() {
+
+async function postToAPI() {
+  showSpinner();
   const venueCreated = await createVenue()
-  console.log(venueCreated)
-  let x = await createEvent(venueCreated.id)
-  console.log(x)
+  const eventCreated = await createEvent(venueCreated.id)
+  const userId = sessionStorage.getItem("userId");
+
   await fetch("http://localhost:3000/createdevents", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({eventId: x.id, venueId: venueCreated.id})
+    body: JSON.stringify({
+      eventId: eventCreated.id,
+      venueId: venueCreated.id,
+      userId,
+    })
 
-  })
+  });
+
+  hideSpinner();
+  cleanForm();
   alert("Event successfully created!")
- }
+}
+
+function cleanForm() {
+  document.getElementById("name").value = "";
+  document.getElementById("eventDescription").value = "";
+
+  document.getElementById("startEventDate").value = "";
+  document.getElementById("startTimeEvent").value = "";
+
+  document.getElementById("endEventDate").value = "";
+  document.getElementById("endTimeEvent").value = "";
+
+  document.getElementById("venueName").value = "";
+  document.getElementById("address1").value = "";
+  document.getElementById("address2").value = "";
+  document.getElementById("city").value = "";
+  document.getElementById("state").value = "";
+  document.getElementById("zipCode").value = "";
+}
 
 async function createEvent(venue_id) {
   let startDate = document.getElementById("startEventDate").value
@@ -33,7 +60,7 @@ async function createEvent(venue_id) {
         html: document.getElementById("name").value
       },
       description: {
-        html: document.getElementById("name").value
+        html: document.getElementById("eventDescription").value
       },
       start: {
         timezone: "America/Chicago",
@@ -67,11 +94,11 @@ async function createVenue() {
     venue: {
       name: document.getElementById("venueName").value,
       address: {
-        address_1:document.getElementById("address1").value,
-        address_2:document.getElementById("address2").value,
-        city:document.getElementById("city").value,
-        region:document.getElementById("state").value,
-        postal_code:document.getElementById("zipCode").value,
+        address_1: document.getElementById("address1").value,
+        address_2: document.getElementById("address2").value,
+        city: document.getElementById("city").value,
+        region: document.getElementById("state").value,
+        postal_code: document.getElementById("zipCode").value,
         country: "US",
       }
     }
@@ -87,7 +114,6 @@ async function createVenue() {
 
   return venueCreated
 }
-
 
 export default postToAPI
 
