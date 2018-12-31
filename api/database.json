@@ -20,46 +20,8 @@
       "firstName": "Deanna",
       "lastName": "Vickers",
       "id": 3
-    },
-    {
-      "email": "asjdkl@aol.com",
-      "firstName": "Tom",
-      "lastName": "Waits",
-      "password": "rain",
-      "id": 4
     }
   ],
-  "events": [
-    {
-      "eventId": "52227085619",
-      "userId": "1",
-      "id": 1
-    }
-  ],
-  "createdevents": [
-    {
-      "eventId": "53717332989",
-      "venueId": "28342219",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "eventId": "53718820438",
-      "venueId": "28342757",
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "eventId": "53896403594",
-      "venueId": "28399551",
-      "userId": 2,
-      "id": 4
-    },
-    {
-      "eventId": "54247402441",
-      "venueId": "28514006",
-      "userId": "1",
-      "id": 5
-    }
-  ]
+  "events": [],
+  "createdevents": []
 }
