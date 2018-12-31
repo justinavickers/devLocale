@@ -1,6 +1,6 @@
 import newEventDOM from "./createEvent"
 import insertListToDOM from "../createdEvents/insertListToDOM";
-import eventContentDOM from "../Events/eventDisplay"
+import eventContentDOM from "../Search/eventDisplay"
 
 const newEvListen = {
   showCreateEventForm: () => {

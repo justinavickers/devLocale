@@ -1,14 +1,12 @@
 import eventFormDiv from "./eventForm"
 import newEvListen from  "../createEvents/newEvListeners"
-import addSearchEventListener from "../../main"
+import { establishActions } from "./actions"
 
 let domEntry = document.getElementById("domEntry")
 
 let eventContentDOM = () => {
   domEntry.innerHTML = ""
   domEntry.innerHTML = eventFormDiv()
-  addSearchEventListener()
-  newEvListen.showCreateEventForm()
-  newEvListen.showCreatedEventsList()
+  establishActions();
 }
 export default eventContentDOM

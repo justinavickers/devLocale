@@ -1,5 +1,5 @@
-import createEventFormDiv from "./createForm";
-import eventContentDOM from "../Events/eventDisplay";
+import createEventFormDiv from "./createEventForm";
+import eventContentDOM from "../Search/eventDisplay";
 import postToAPI from "./postEvent";
 import newEvListeners from "./newEvListeners"
 
