@@ -7,7 +7,7 @@ async function postToAPI() {
   showSpinner();
   const venueCreated = await createVenue()
   const eventCreated = await createEvent(venueCreated.id)
-  const userId = sessionStorage.getItem("userId");
+  const user_id = sessionStorage.getItem("userId");
 
   await fetch("http://localhost:3000/createdevents", {
     method: "POST",
@@ -15,9 +15,9 @@ async function postToAPI() {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      eventId: eventCreated.id,
-      venueId: venueCreated.id,
-      userId,
+      event_id: eventCreated.id,
+      venue_id: venueCreated.id,
+      user_id,
     })
 
   });

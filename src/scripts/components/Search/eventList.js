@@ -5,7 +5,6 @@ function eventsList(parsedEvents, domEntry) {
     let eventContent = eventDisplay(event)
     domEntry.innerHTML += eventContent
   })
-  eventListening.saveButton()
 }
 
 export default eventsList

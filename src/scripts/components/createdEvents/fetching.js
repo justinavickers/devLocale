@@ -3,7 +3,7 @@ import eventbrite from "eventbrite"
 
 async function retrieveCreatedEvents(){
   const userId = sessionStorage.getItem("userId");
-  const response = await fetch(`http://localhost:3000/createdevents?userId=${userId}`, {
+  const response = await fetch(`http://localhost:3000/createdevents?user_id=${userId}`, {
     method: "GET"
 })
   const createdevents = await response.json()
@@ -32,7 +32,7 @@ async function retrieveEventsList(){
   const venuesList = []
 
   for(let index = 0; index<createdEvents.length; index++){
-    const event = await retrieveEvent(createdEvents[index].eventId)
+    const event = await retrieveEvent(createdEvents[index].event_id)
     const venue = await retrieveVenue(event.venue_id)
     eventsList.push(Object.assign({}, event, {createdEventId:createdEvents[index].id}))
     venuesList.push(venue)

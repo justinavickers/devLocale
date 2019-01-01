@@ -20,8 +20,41 @@
       "firstName": "Deanna",
       "lastName": "Vickers",
       "id": 3
+    },
+    {
+      "email": "nhfell@hotmail.com",
+      "firstName": "Nick",
+      "lastName": "Fell",
+      "password": "castor",
+      "id": 4
+    },
+    {
+      "email": "hey@yahoo.com",
+      "firstName": "Jacob",
+      "lastName": "R",
+      "password": "nope",
+      "id": 5
     }
   ],
   "events": [],
-  "createdevents": []
+  "createdevents": [
+    {
+      "event_id": "53774581220",
+      "venue_id": "25590483",
+      "user_id": "1",
+      "id": 2
+    },
+    {
+      "event_id": "53159648941",
+      "venue_id": "28143098",
+      "user_id": "1",
+      "id": 3
+    },
+    {
+      "event_id": "54265437384",
+      "venue_id": "28520577",
+      "user_id": "1",
+      "id": 4
+    }
+  ]
 }

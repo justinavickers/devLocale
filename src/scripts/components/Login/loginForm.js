@@ -6,7 +6,7 @@ export default function getLoginForm() {
       <div class="col-md-8 col-lg-8 mx-3 d-flex flex-column align-items-center">
         <div class="card w-50">
           <div class="card-header w-100 bg-light d-flex flex-column align-items-center">
-            <h5 class="mt-2">Welcome to Justina's Project</h5>
+            <h5 class="mt-2">Welcome to DevLocale</h5>
           </div>
 
           <div class="card-body w-100">
