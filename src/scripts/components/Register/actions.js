@@ -1,8 +1,6 @@
 import userAPIfunctions from "./fetching";
 import insertLoginIntoDOM from "../Login/insertLoginIntoDOM";
 import { hideSpinner, showSpinner } from "../../spinner";
-// import hideDiv from "./classChanger"
-// import eventContentDOM from "../Events/eventDisplay";
 
 export async function registerUser() {
   showSpinner();

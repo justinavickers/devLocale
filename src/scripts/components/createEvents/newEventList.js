@@ -1,5 +1,4 @@
 import newEvListen from "./newEvListeners"
-import addSearchEventListener from "../../main";
 function newEventsList() {
    newEvListen.showCreateEventForm()
    newEvListen.showCreatedEventsList()
