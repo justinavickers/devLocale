@@ -3,7 +3,6 @@ import insertNavBarIntoDOM from "../NavBar/insertNavBarIntoDOM";
 import eventContentDOM from "../Search/eventDisplay";
 import userAPIfunctions from "./fetching"
 import { hideSpinner, showSpinner } from "../../spinner";
-import registerUser from "./registerUser";
 
 function loginUser() {
   showSpinner();

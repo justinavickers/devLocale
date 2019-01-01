@@ -3,7 +3,7 @@ export default function getNavBar() {
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand"
         href="javascript:void(0)">
-        Justina's Project
+        DevLocale
       </a>
 
       <button class="navbar-toggler"
